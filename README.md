@@ -1,6 +1,7 @@
 # PokeAPI
 PokeAPI is a JavaScript project that uses multiple Pokémon APIs to display the names and images of various Pokémon from the first to the seventh generation. Users can view different images of the Pokémon by hovering over the Pokéball icon. This project provides an engaging way to explore Pokémon data with a clean and interactive interface.
 
+![principal](https://github.com/AnndyyRobles/JavaScript-PokeAPI/blob/main/imgs/img1.jpg)
 ## Key Features
 Generation-Based Pokémon Display: View Pokémon from the first to the seventh generation.
 Hover Effect: Change Pokémon images by hovering over the Pokéball icon, utilizing multiple Pokémon APIs.
@@ -14,7 +15,7 @@ CSS3: Styles and visual design.
 Pokémon APIs: Integration of multiple APIs for fetching Pokémon data and images.
 
 ## Screenshots
-
+![principal](https://github.com/AnndyyRobles/JavaScript-PokeAPI/blob/main/imgs/img2.jpg)
 
 ## Installation
 ### Clone the repository:
