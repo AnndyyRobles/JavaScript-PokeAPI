@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Patua One', cursive;
+}
+body{
+    background-color: rgb(16, 3, 50);
+    min-height: 100%;
+    background-size: cover;
+}
+.title{
+    color: rgb(238, 214, 37);
+    width: 100%;
+    text-align: center;
+}
+.filters{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.filters>*{ /*es un selector de hijos*/
+    margin: .2em .9em;
+}
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label{
+  position: relative; 
+  padding: 12px 12px 12px 20px;
+  cursor: pointer; 
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-left: 10px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+[type="radio"]:checked:hover + label:before,
+[type="radio"]:not(:checked):hover + label:before,
+[type="radio"]:checked:hover + label:after,
+[type="radio"]:not(:checked):hover + label:after{
+    opacity: 0.7;
+}
+[type="radio"]:checked + label::before,
+[type="radio"]:not(:checked) + label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:checked + label::after,
+[type="radio"]:not(:checked) + label::after{
+    background-color: rgb(173, 236, 89);
+    content: "";
+    width: calc(100% - 8px);
+    border-radius: 2px;
+    height: 27px;
+    position: absolute;
+    top: 4px;
+    left: 6.5px;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label::after{
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label::after{
+    opacity: 0.6;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+.radio-gens:checked + label::before,
+.radio-gens:not(:checked) + label::before{
+    border: 3px solid rgb(159, 185, 8);
+
+}
+.radio-gens:checked + label::after,
+.radio-gens:not(:checked) + label::after{
+    background-color: rgb(173, 236, 89);
+}
+#btnicon{
+    width: 50px;
+    margin: 20px 0 5px 20px;
+}
+.container{
+    padding: 1em;
+    display: flex;
+    width: 100vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+li:hover{
+    border: 3px solid rgb(159, 185, 8);
+    box-shadow: inset 0 0 35px 1px rgb(173, 236, 89);
+    background-color: rgba(120, 196, 21, 0.196);
+    border-radius: 35%;
+}
+.pokeimage{
+    width: 135px;
+}
+.pokeimage:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
